@@ -1,82 +1,57 @@
-# ATS-Resume
+# ATS_Resume_Expert
+
+ATS_Resume_Expert is a data science application powered by Google Gemini Pro APIs and built using LangChain. It compares the job description of a job application against your resume and provides a score of match percentage. It also provides suggestions to improve your resume on keywords and areas.
+
+## Requirements
+
+To run this application, you will need:
+
+- Python 3.8 or higher
+- Google Gemini Pro API key
+- LangChain library
+- Other dependencies listed in requirements.txt
+
+## Installation
+
+To install this application, follow these steps:
+
+- Clone this repository to your local machine
+- Navigate to the project folder and create a virtual environment
+- Activate the virtual environment and install the dependencies
+- Set up your Google Gemini Pro API key as an environment variable
+- Run the main.py script
+
+## Usage
+
+To use this application, you will need to:
+
+- Provide a job description file in txt format
+- Provide a resume file in pdf format
+- Run the app.py script with the file paths as arguments
+- Wait for the application to process the files and generate the output
+- View the output file in the output folder, which will contain the match score and suggestions
+
+## Example
+
+Here is an example of how to run the application with sample files:
+
+```
+python main.py job_description.txt resume.pdf
+
+The output file will look something like this:
+Match score: 75%
+
+Suggestions:
+
+- Add more keywords related to data analysis, such as pandas, numpy, matplotlib, etc.
+- Highlight your achievements and skills in bullet points
+- Use active verbs and concise language
+- Proofread your resume for spelling and grammar errors
+``` 
 
 
-# 🤖 ATS Resume Expert
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-![ATS Resume Expert Banner](https://github.com/yourusername/ats-resume-expert/blob/main/banner.png?raw=true)
-
-Welcome to **ATS Resume Expert**! 🎉 This Streamlit application leverages advanced AI to help you optimize your resume for Applicant Tracking Systems (ATS) and align it perfectly with job descriptions. Whether you're looking to understand how your resume matches a job posting or seeking ways to enhance your skills, ATS Resume Expert has got you covered! 🚀
-
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Environment Variables](#environment-variables)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## 🌟 Features
-
-- **Resume Evaluation**: Get professional feedback on how well your resume aligns with a specific job description.
-- **Skill Improvement Suggestions**: Receive actionable advice to enhance your skills and improve your resume.
-- **Percentage Match Analysis**: Understand the percentage match between your resume and the job description, along with missing keywords.
-- **User-Friendly Interface**: Intuitive and easy-to-use interface built with Streamlit.
-- **Secure File Uploads**: Upload your resume securely in PDF format for analysis.
-
-## 🚀 Installation
-
-Follow these steps to set up the project locally:
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/yourusername/ats-resume-expert.git
-   cd ats-resume-expert
-
- python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-pip install -r requirements.txt
-
-GOOGLE_API_KEY=your_google_api_key_here
-
-🛠️ Usage
-Run the Streamlit app using the following command:
-streamlit run app.py
-
-The application will open in your default web browser. Follow these steps:
-
-Enter Job Description: Paste the job description you're targeting.
-Upload Your Resume: Upload your resume in PDF format.
-
-Choose an Action:
-Tell me about the resume 📝: Get a professional evaluation of how your resume aligns with the job description.
-How can I improve my skills 📈: Receive suggestions to enhance your skills and resume.
-Percentage match 📊: Get a percentage match of your resume against the job description, including missing keywords.
-
-
-🔧 Environment Variables
-The application uses environment variables to manage sensitive information. Ensure you have a .env file with the following:
-GOOGLE_API_KEY=your_google_api_key_here
-
-
-📦 Dependencies
-Key libraries and tools used in this project:
-
-Streamlit 🚀: For building the web application interface.
-Python-dotenv 📂: To load environment variables from a .env file.
-Pillow (PIL) 🖼️: For image processing.
-pdf2image 📄: To convert PDF files to images.
-Google Generative AI 🤖: For generating AI-based responses.
-Base64 🔐: For encoding binary data.
-
-
-📫 Contact
-Have questions or suggestions? Reach out to us!
-
-Email: suprithsreekantaswamy@gmail.com
-GitHub: Suprith-17
+## Contact
+If you have any questions, feedback, or suggestions, feel free to contact me at gurjeet333@gmail.com.
